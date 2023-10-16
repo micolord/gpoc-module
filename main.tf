@@ -1,4 +1,4 @@
-module "ec2_instance2" {
+module "ec2_instance3" {
   source  = "terraform-aws-modules/ec2-instance/aws"
 
   name = "${var.env_name}-${var.project}-GO1"
@@ -20,7 +20,7 @@ module "ec2_instance2" {
   }
 }
 
-module "GO_sg2" {
+module "GO_sg3" {
   source = "terraform-aws-modules/security-group/aws//modules/http-80"
 
   name        = "${var.env_name}-${var.project}-GO-sg"
