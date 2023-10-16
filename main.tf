@@ -10,7 +10,7 @@ module "ec2_instance3" {
   user_data              = file("userdata.sh")
   associate_public_ip_address = true
   iam_instance_profile   = "MySessionManagerRole"
-  vpc_security_group_ids = [module.GO_sg2.security_group_id]
+  vpc_security_group_ids = [module.GO_sg3.security_group_id]
   subnet_id              = var.public_subnet_id_1
 
   tags = {
