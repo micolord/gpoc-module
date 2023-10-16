@@ -1,11 +1,3 @@
-provider "aws" {
-    region = var.region
-}
-
-terraform {
-    required_version = ">=1.0"
-}
-
 module "ec2_instance" {
   source  = "terraform-aws-modules/ec2-instance/aws"
 
